@@ -98,29 +98,6 @@ export default function ContactSection() {
               </h2>
 
               <div className="space-y-4">
-                {/* <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 p-4 border border-gray-200 rounded-md hover:border-cyan-500 hover:bg-cyan-50 transition duration-200"
-                >
-                  <div className="bg-cyan-500 p-2 rounded">
-                    <Linkedin className="w-5 h-5 text-white" />
-                  </div>
-                  <span className="font-medium text-gray-700">LinkedIn</span>
-                </a> */}
-
-                {/* <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 p-4 border border-gray-200 rounded-md hover:border-cyan-500 hover:bg-cyan-50 transition duration-200"
-                >
-                  <div className="bg-cyan-500 p-2 rounded">
-                    <Twitter className="w-5 h-5 text-white" />
-                  </div>
-                  <span className="font-medium text-gray-700">Twitter</span>
-                </a> */}
 
                 <button className="w-full flex items-center justify-center gap-3 p-4 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold rounded-md transition duration-200">
                   <Calendar className="w-5 h-5" />

@@ -150,30 +150,43 @@ export default function HeroSection() {
         </div>
 
         {/* Right Circle Avatar */}
-        <div className="flex-1 flex justify-end pr-20">
-          <div className="relative w-64 h-64">
-            {/* Outer Circle Animation */}
-            <div className="absolute inset-0 rounded-full border-2 border-cyan-400 opacity-50 animate-pulse"></div>
-
-            {/* Middle Circle */}
-            <div className="absolute inset-2 rounded-full border border-cyan-300 opacity-40"></div>
-
-            {/* Inner Circle */}
-            <div className="absolute inset-8 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-600/20 flex items-center justify-center">
-              <img
-                src={Tripic}
-                alt="TR Logo"
-                className="w-28 h-35 rounded-full object-cover"
-              />
-            </div>
-
-            {/* Rotating Border */}
-            <div
-              className="absolute inset-0 rounded-full border-2 border-transparent border-t-cyan-400 border-r-cyan-300 animate-spin"
-              style={{ animationDuration: "8s" }}
-            ></div>
+        <div className="flex-1 flex justify-end items-center pr-20">
+      <div className="relative w-72 h-72">
+        {/* Subtle outer glow */}
+        <div className="absolute inset-0 rounded-full bg-cyan-400/10 blur-2xl"></div>
+        
+        {/* Outer decorative circle */}
+        <div className="absolute inset-0 rounded-full border border-cyan-400/30"></div>
+        
+        {/* Rotating accent border - slower and subtler */}
+        <div 
+          className="absolute inset-0 rounded-full border-2 border-transparent border-t-cyan-400/60 animate-spin"
+          style={{ animationDuration: "12s" }}
+        ></div>
+        
+        {/* Main image container */}
+        <div className="absolute inset-6 rounded-full bg-gradient-to-br from-slate-700 to-slate-800 p-1 shadow-xl">
+          <div className="w-full h-full rounded-full bg-gradient-to-br from-cyan-500/10 to-blue-600/10 flex items-center justify-center overflow-hidden">
+            <img
+              src={Tripic}
+              alt="Profile"
+              className="w-full h-full object-cover rounded-full"
+            />
           </div>
         </div>
+        
+        {/* Small accent dots */}
+        <div className="absolute top-4 right-16 w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></div>
+        <div 
+          className="absolute bottom-8 left-12 w-1.5 h-1.5 rounded-full bg-cyan-300 animate-pulse"
+          style={{ animationDelay: "1s" }}
+        ></div>
+        <div 
+          className="absolute top-16 left-8 w-1 h-1 rounded-full bg-cyan-400 animate-pulse"
+          style={{ animationDelay: "2s" }}
+        ></div>
+      </div>
+    </div>
       </div>
     </div>
   );

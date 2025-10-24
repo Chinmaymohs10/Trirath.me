@@ -7,6 +7,8 @@ import Gallery from './components/GallerySection';
 import ExperienceSection from "./components/ExperienceSection";
 import TravelSection from './components/TravelSection.jsx';
 import ContactSection from './components/ContactSection.jsx';
+import Footer from "./components/Footer.jsx";
+import ScrollToTopButton from "./components/ScrollToTopButton.jsx";
 
 const App = () => (
   <div>
@@ -17,6 +19,8 @@ const App = () => (
     <ExperienceSection/>
     <TravelSection/>
     <ContactSection/>
+    <Footer/>
+    <ScrollToTopButton /> 
   </div>
 );
 

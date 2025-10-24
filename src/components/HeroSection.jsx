@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import Tripic from "../assets/Tripic.png"
 import { Facebook, Instagram, Twitter, Linkedin, Mail } from "lucide-react";
-
+import Tripic from "../assets/Tripic.png";
 export default function HeroSection() {
   const canvasRef = useRef(null);
 
@@ -108,91 +107,89 @@ export default function HeroSection() {
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
 
       {/* Social Icons Sidebar */}
-      <div className="absolute left-3 top-1/2 transform -translate-y-1/2 z-20 flex flex-col gap-6">
-        <a href="#" className="flex items-center justify-center w-12 h-12 rounded-full bg-slate-800 hover:bg-cyan-500 text-cyan-400 hover:text-white transition-all duration-300">
-          <Facebook size={24} />
+      <div className="absolute left-2 md:left-3 top-1/2 transform -translate-y-1/2 z-20 flex flex-col gap-3 md:gap-6">
+        <a href="#" className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-slate-800 hover:bg-cyan-500 text-cyan-400 hover:text-white transition-all duration-300">
+          <Facebook size={20} className="md:w-6 md:h-6" />
         </a>
-        <a href="#" className="flex items-center justify-center w-12 h-12 rounded-full bg-slate-800 hover:bg-cyan-500 text-cyan-400 hover:text-white transition-all duration-300">
-          <Instagram size={24} />
+        <a href="#" className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-slate-800 hover:bg-cyan-500 text-cyan-400 hover:text-white transition-all duration-300">
+          <Instagram size={20} className="md:w-6 md:h-6" />
         </a>
-        <a href="#" className="flex items-center justify-center w-12 h-12 rounded-full bg-slate-800 hover:bg-cyan-500 text-cyan-400 hover:text-white transition-all duration-300">
-          <Twitter size={24} />
+        <a href="#" className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-slate-800 hover:bg-cyan-500 text-cyan-400 hover:text-white transition-all duration-300">
+          <Twitter size={20} className="md:w-6 md:h-6" />
         </a>
-        <a href="#" className="flex items-center justify-center w-12 h-12 rounded-full bg-slate-800 hover:bg-cyan-500 text-cyan-400 hover:text-white transition-all duration-300">
-          <Linkedin size={24} />
+        <a href="#" className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-slate-800 hover:bg-cyan-500 text-cyan-400 hover:text-white transition-all duration-300">
+          <Linkedin size={20} className="md:w-6 md:h-6" />
         </a>
-        <a href="#" className="flex items-center justify-center w-12 h-12 rounded-full bg-slate-800 hover:bg-cyan-500 text-cyan-400 hover:text-white transition-all duration-300">
-          <Mail size={24} />
+        <a href="#" className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-slate-800 hover:bg-cyan-500 text-cyan-400 hover:text-white transition-all duration-300">
+          <Mail size={20} className="md:w-6 md:h-6" />
         </a>
       </div>
 
       {/* Hero Content */}
-      <div className="absolute inset-0 z-10 flex items-center justify-between px-12 left-20">
+      <div className="absolute inset-0 z-10 flex flex-col lg:flex-row items-center justify-between px-6 md:px-12 lg:left-20 py-12 lg:py-0">
         {/* Left Content */}
-        <div className="max-w-2xl">
-          <h1 className="text-6xl font-bold mb-4">
+        <div className="max-w-2xl text-center lg:text-left mb-8 lg:mb-0">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4">
             <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent">
               Tribikram Rath
             </span>
           </h1>
 
-          <h2 className="text-4xl font-semibold text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white mb-3 md:mb-4">
             Inspiring Tech Innovation
           </h2>
 
-          <p className="text-xl text-yellow-400 italic mb-8">
+          <p className="text-lg sm:text-xl text-yellow-400 italic mb-6 md:mb-8">
             30+ Years Shaping a Digital Future
           </p>
 
-          <button className="px-8 py-3 bg-gradient-to-r from-blue-400 to-cyan-400 text-dark-900 font-bold rounded-full hover:shadow-lg hover:shadow-cyan-400/50 transition-all duration-300 transform hover:scale-105">
+          <button className="px-6 md:px-8 py-2.5 md:py-3 bg-gradient-to-r from-blue-400 to-cyan-400 text-dark-900 font-bold rounded-full hover:shadow-lg hover:shadow-cyan-400/50 transition-all duration-300 transform hover:scale-105">
             Discover My Journey
           </button>
         </div>
 
         {/* Right Circle Avatar */}
-        <div className="flex-1 flex justify-end items-center pr-20">
-      <div className="relative w-72 h-72">
-        {/* Subtle outer glow */}
-        <div className="absolute inset-0 rounded-full bg-cyan-400/10 blur-2xl"></div>
-        
-        {/* Outer decorative circle */}
-        <div className="absolute inset-0 rounded-full border border-cyan-400/30"></div>
-        
-        {/* Rotating accent border - slower and subtler */}
-        <div 
-          className="absolute inset-0 rounded-full border-2 border-transparent border-t-cyan-400/60 animate-spin"
-          style={{ animationDuration: "12s" }}
-        ></div>
-        
-        {/* Main image container */}
-        <div className="absolute inset-6 rounded-full bg-gradient-to-br from-slate-700 to-slate-800 p-1 shadow-xl">
-          <div className="w-full h-full rounded-full bg-gradient-to-br from-cyan-500/10 to-blue-600/10 flex items-center justify-center overflow-hidden">
-            <img
-              src={Tripic}
-              alt="Profile"
-              className="w-full h-full object-cover rounded-full"
-            />
+        <div className="flex-1 flex justify-center lg:justify-end items-center lg:pr-20">
+          <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72">
+            {/* Subtle outer glow */}
+            <div className="absolute inset-0 rounded-full bg-cyan-400/10 blur-2xl"></div>
+            
+            {/* Outer decorative circle */}
+            <div className="absolute inset-0 rounded-full border border-cyan-400/30"></div>
+            
+            {/* Rotating accent border - slower and subtler */}
+            <div 
+              className="absolute inset-0 rounded-full border-2 border-transparent border-t-cyan-400/60 animate-spin"
+              style={{ animationDuration: "12s" }}
+            ></div>
+            
+            {/* Main image container */}
+            <div className="absolute inset-4 sm:inset-5 md:inset-6 rounded-full bg-gradient-to-br from-slate-700 to-slate-800 p-1 shadow-xl">
+              <div className="w-full h-full rounded-full bg-gradient-to-br from-cyan-500/10 to-blue-600/10 flex items-center justify-center overflow-hidden">
+                <img
+                  src={Tripic}
+                  alt="Profile"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </div>
+            </div>
+            
+            {/* Small accent dots */}
+            <div className="absolute top-2 right-8 sm:top-4 sm:right-12 md:right-16 w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-cyan-400 animate-pulse"></div>
+            <div 
+              className="absolute bottom-4 left-6 sm:bottom-6 sm:left-8 md:bottom-8 md:left-12 w-1 h-1 md:w-1.5 md:h-1.5 rounded-full bg-cyan-300 animate-pulse"
+              style={{ animationDelay: "1s" }}
+            ></div>
+            <div 
+              className="absolute top-8 left-4 sm:top-12 sm:left-6 md:top-16 md:left-8 w-0.5 h-0.5 md:w-1 md:h-1 rounded-full bg-cyan-400 animate-pulse"
+              style={{ animationDelay: "2s" }}
+            ></div>
           </div>
         </div>
-        
-        {/* Small accent dots */}
-        <div className="absolute top-4 right-16 w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></div>
-        <div 
-          className="absolute bottom-8 left-12 w-1.5 h-1.5 rounded-full bg-cyan-300 animate-pulse"
-          style={{ animationDelay: "1s" }}
-        ></div>
-        <div 
-          className="absolute top-16 left-8 w-1 h-1 rounded-full bg-cyan-400 animate-pulse"
-          style={{ animationDelay: "2s" }}
-        ></div>
-      </div>
-    </div>
       </div>
     </div>
   );
 }
-
-
 
 // import React, { useEffect, useRef } from "react";
 // import Tripic from "../assets/Tripic.png";

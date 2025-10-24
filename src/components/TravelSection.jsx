@@ -6,7 +6,7 @@ const Travel = () => {
   return (
    <section
   id="travel"
-  className="relative py-32 mt-100 overflow-hidden" // add mt-20 for top margin
+  className="relative pt-22 pb-32 mt-100 overflow-hidden" // add mt-20 for top margin
   style={{
     backgroundImage: `url(${travelBg})`,
     backgroundSize: 'cover',

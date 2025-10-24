@@ -115,12 +115,9 @@ export default function Footer() {
             © {new Date().getFullYear()} Tribikram Rath. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
-            <a href="#" className="text-gray-500 hover:text-cyan-400 transition-colors duration-200">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-gray-500 hover:text-cyan-400 transition-colors duration-200">
-              Terms of Service
-            </a>
+            <p className="text-gray-500 text-sm text-center md:text-left">
+              Designed by <b><a href="https://mohs10.io/">Mohs10 Technologies</a></b>
+          </p>
           </div>
         </div>
       </div>
